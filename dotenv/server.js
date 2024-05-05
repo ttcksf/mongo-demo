@@ -15,6 +15,7 @@ app.use(express.json());
 app.use(cors());
 
 // dotenvをインポート
+// .gitignoreに追加しておく
 const dotenv = require('dotenv');
 dotenv.config();
 const dbUrl = process.env.MONGO_DB;
