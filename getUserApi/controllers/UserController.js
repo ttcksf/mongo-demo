@@ -9,6 +9,8 @@ const getUser = async (req, res) => {
     const user = await userModel.findById(id);
     if (user) {
       res.status(200).json(user);
+    } else {
+      res.status(404).json('Not Found');
     }
   } catch (error) {
     res.status(500).json(error);

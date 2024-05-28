@@ -7,7 +7,7 @@ router.get('/', async (req, res) => {
   res.send('user');
 });
 
-// ユーザー情報の取得
+// ユーザー情報の取得(postではなくget)
 router.get('/:id', getUser);
 
 module.exports = router;
